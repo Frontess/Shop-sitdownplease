@@ -1,0 +1,26 @@
+@import 'card';
+.offers{
+  padding-bottom: 67px;
+  &__container{
+    position: relative;
+  }
+  .swiper-slide{
+    display: flex;
+    justify-content: space-between;
+    &--tablet{
+      display: none;
+    } 
+  }
+  &__link{
+    outline: none;
+  }
+  &__link--big{
+    width: calc(624 / 1280 * 100%);
+  }
+  &__link--min{
+    width: calc(296 / 1280 * 100%);
+  }
+  &__title{
+    margin-bottom: 22px;
+  }
+}

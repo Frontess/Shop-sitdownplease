@@ -1,0 +1,315 @@
+@import 'variable';
+.header{
+  padding-bottom: 33px;
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__top-list{
+    margin-left: auto;
+  }
+  &__top{
+    padding-top: 16px;
+    padding-bottom: 12px;
+    background-color: $colorGreyLight;
+  }
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    &--actions{
+      justify-content: space-between;
+    }
+  }
+  &__regions{
+    margin-right: 27px;
+  }
+  &__logo{
+    outline: none;
+    &--320block{
+      display: none;
+    }
+  }
+  &__nav{
+    padding-top: 32px;
+    padding-bottom: 28px;
+  }
+  &__tablet{
+    padding: 18px 0;
+    background-color: $colorGreyLight;
+    display: none;
+  }
+  &__768line{
+    display: none;
+    padding: 32px 0;
+  }
+}
+.regions{
+  display: flex;
+  align-items: center;
+  &__text{
+    color: $colorBlack;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+}
+.tel{
+  position: relative;
+  color: $colorSecondary;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  transition: color 0.2s linear;
+  outline: none;
+  &:before{
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    left: -3px;
+    display: block;
+    background-color: $colorSecondaryBone;
+    transform: scale(0);
+    transition: transform 0.2s linear;
+  }
+  &:focus:not(:active):before{
+    transform: scale(1);
+  }
+  &:hover{
+    color: $colorSecondaryLight;
+  }
+  &:hover svg{
+    fill: $colorSecondaryLight;
+  }
+  &:active{
+    color: $colorSecondaryShade;
+  }
+  &:active svg{
+    fill: $colorSecondaryShade;
+  }
+  svg{
+    width: 22px;
+    height: 22px;
+    margin-right: 3px;
+    position: relative;
+    transition: fill 0.2s linear;
+    fill: $colorSecondary;
+  }
+  &__text{
+    position: relative;
+  }
+}
+.top-list{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: $colorGrey;
+  &__item:not(:last-child){
+    margin-right: 65px;
+  }
+  &__link{
+    transition: color 0.2s linear;
+    position: relative;
+    outline: none;
+    &-text{
+      position: relative;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      bottom: -3px;
+      right: -3px;
+      display: block;
+      background-color: $colorFocuselement;
+      transform: scale(0);
+      transition: transform 0.2s linear;
+    }
+    &:hover{
+      color: $colorPrimary;
+    }
+    &:focus:not(:hover):before{
+      transform: scale(1);
+    }
+    &:active{
+      color: $colorPrimaryShade;
+    }
+  }
+}
+.nav{
+  // &--768block{
+  //   display: none;
+  // }
+  color: $colorBlack;
+  font-size: 16px;
+  &--header{
+    margin-left: auto;
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+  }
+  &__list-item:not(:last-child){
+    margin-right: 92px;
+  }
+  &__list-link{
+    position: relative;
+    transition: color 0.2s linear;
+    outline: none;
+    &:before{
+      content: '';
+      position: absolute;
+      display: block;
+      top: -3px;
+      right: -3px;
+      bottom: -3px;
+      left: -3px;
+      background-color: $colorFocuselement;
+      transform: scale(0);
+      transition: transform 0.2s linear;
+    }
+    &:hover{
+      color: $colorPrimary;
+    }
+    &:focus:not(:hover):before{
+      transform: scale(1);
+    }
+    &:active{
+      color: $colorPrimaryShade;
+    }
+  }
+  &__list-link-text{
+    position: relative;
+  }
+}
+.header-form{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $colorGreyLight;
+  height: 60px;
+  border-radius: 10px;
+  width: calc(1061 / 1280 * 100%);
+  padding-right: 2px;
+  &__input{
+    border: none;
+    background-color: transparent;
+    background-image: url('../img/search-greyLight.svg');
+    background-repeat: no-repeat;
+    background-position: center left 4%;
+    background-size: 20px 20px;
+    padding-left: 58px;
+    padding-right: 70px;
+    height: 100%;
+    outline-color:  $colorPrimary;
+    border-radius: 10px 0px 0px 10px;
+    flex: 1 0 auto;
+    margin-right: 2px;
+    transition: background 0.2s linear;
+    &::placeholder{
+      color: $colorGrey;
+    }
+    &:hover{
+      background-color: $colorMdGrey;
+    }
+    &:focus:not(:hover){
+      background-color: $colorPrimaryLightLight;
+    }
+    &:active{
+      background-image: url('../img/search-pink.svg');
+    }
+  }
+  &__btn{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    right: 332px;
+    cursor: pointer;
+    background-image: url('../img/form-btn.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background 0.2s linear;
+    outline: none;
+    &:hover{
+      background-image: url('../img/form-btn-hover.svg');
+    }
+    &:focus{
+      background-image: url('../img/form-btn-focus.svg');
+    }
+    &:active{
+      background-image: url('../img/form-btn-active.svg');
+    }
+  }
+  &__svg{
+    width: 100%;
+    height: 100%;
+  }
+}
+.action-list{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 4px;
+  &__item:not(:last-child){
+    margin-right: 41px;
+  }
+  &__link{
+    display: block;
+    position: relative;
+    outline: none;
+    &:before{
+      content: '';
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      bottom: -3px;
+      left: -3px;
+      background-color: $colorPrimaryLight;
+      transform: scale(0);
+      transition: transform 0.2s linear;
+    }
+    &--counter::before{
+      left: -15px;
+    }
+    &:focus:not(:active):before{
+      transform: scale(1);
+    }
+    &:focus svg{
+      fill: $colorWhite;
+    }
+    &:active svg{
+      fill: $colorPrimaryShade;
+    }
+  }
+  &__svg{
+    width: 30px;
+    height: 28px;
+    fill: $colorPrimary;
+    transition: fill 0.2s linear;
+    position: relative;
+    &:hover{
+      fill: $colorPrimaryLight;
+    }
+  }
+  &__counter{
+    min-width: 15px;
+    height: 15px;
+    background-color: $colorSecondary;
+    text-align: center;
+    border-radius: 100%;
+    font-weight: 700;
+    font-size: 11px;
+    color: $colorWhite;
+    line-height: 1.2;
+    padding: 1px 3px;
+    position: absolute;
+    z-index: 1;
+    left: -11px;
+    top: 5px;
+  }
+}

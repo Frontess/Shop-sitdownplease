@@ -1,0 +1,546 @@
+<div class="catalog-content">
+    <div class="catalog-content__top">
+      <h1 class="catalog-content__title">Каталог</h1>
+      <ul class="catalog-content__list js-catalog-content-list">
+        <!-- <li class="catalog-content__item catalog-content__item--lime">
+          <button class="catalog-content__button catalog-content__button--lime">Диваны</button>
+        </li>
+        <li class="catalog-content__item catalog-content__item--bone">
+          <button class="catalog-content__button catalog-content__button--bone">До 150000</button>
+        </li>
+        <li class="catalog-content__item catalog-content__item--pink-violet">
+          <button class="catalog-content__button catalog-content__button--pink-violet">Без скидки</button>
+        </li>
+        <li class="catalog-content__item catalog-content__item--grey-light">
+          <button class="catalog-content__button catalog-content__button--grey-light">Оранжевый</button>
+        </li> -->
+      </ul>
+    </div>
+    <div class="catalog-content__filtres catalog-content-filtres">
+      <p class="catalog-content-filtres__text">Фильтры:</p>
+      <ul class="catalog-content-filtres__list">
+        <li class="catalog-content-filtres__item catalog-content-filtres__item--zindex2">
+          <button class="catalog-content-filtres__button js-catalog-content-filtres-button">Категория</button>
+          <div class="catalog-filtres catalog-filtres--catalog-content-block js-catalog-filtres-hidden">
+            <div class="catalog-filtres__filtres">
+              <div class="catalog-filtres__category" data-parent-filter="category">
+                <ul class="catalog-filtres__list">
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Диваны">
+                      <span class="checkbox-custom"></span>
+                      Диваны
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Кресла">
+                      <span class="checkbox-custom"></span>
+                      Кресла
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Пуфы">
+                      <span class="checkbox-custom"></span>
+                      Пуфы
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Кровати">
+                      <span class="checkbox-custom"></span>
+                      Кровати
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Тумбы">
+                      <span class="checkbox-custom"></span>
+                      Тумбы
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Комоды">
+                      <span class="checkbox-custom"></span>
+                      Комоды
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Стулья">
+                      <span class="checkbox-custom"></span>
+                      Стулья
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Столы">
+                      <span class="checkbox-custom"></span>
+                      Столы
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Аксессуары">
+                      <span class="checkbox-custom"></span>
+                      Аксессуары
+                    </label>
+                  </li>
+                </ul>
+                <a href="#" class="catalog-filtres__link">
+                  <span class="catalog-filtres__link-text">
+                    + еще 12
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="catalog-content-filtres__item catalog-content-filtres__item--zindex2">
+          <button class="catalog-content-filtres__button js-catalog-content-filtres-button">Цена</button>
+          <div class="catalog-filtres catalog-filtres--catalog-content-block js-catalog-filtres-hidden">
+            <div class="catalog-filtres__filtres">
+              <div class="catalog-filtres__category" data-parent-filter="price">
+                <ul class="catalog-filtres__list catalog-filtres__list--price">
+                  <li class="catalog-filtres__item">
+                    <div class="catalog-filtres__inputs">
+                      <label class="catalog-filtres__label">
+                        <span class="catalog-filtres__text">от</span>
+                        <input class="catalog-filtres__input js-catalog-filter-input" type="number" min="2000"
+                          placeholder="2000" aria-label="Мнимальное значение цены">
+                      </label>
+                      <label class="catalog-filtres__label">
+                        <span class="catalog-filtres__text">до</span>
+                        <input class="catalog-filtres__input js-catalog-filter-input" type="number" max="150000"
+                          placeholder="150000" aria-label="Максимальное значение цены">
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="catalog-content-filtres__item catalog-content-filtres__item--zindex1">
+          <button class="catalog-content-filtres__button js-catalog-content-filtres-button">Скидка</button>
+          <div
+            class="catalog-filtres catalog-filtres--catalog-content-block catalog-filtres--catalog-content-padding js-catalog-filtres-hidden">
+            <div class="catalog-filtres__filtres">
+              <div class="catalog-filtres__category" data-parent-filter="sale">
+                <ul class="catalog-filtres__list">
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Более 5 000">
+                      <span class="checkbox-custom"></span>
+                      Более 5 000
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Менее 5 000">
+                      <span class="checkbox-custom"></span>
+                      Менее 5 000
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Не важно">
+                      <span class="checkbox-custom"></span>
+                      Не важно
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="catalog-content-filtres__item catalog-content-filtres__item--zindex1">
+          <button class="catalog-content-filtres__button js-catalog-content-filtres-button">Цвет</button>
+          <div
+            class="catalog-filtres catalog-filtres--catalog-content-block catalog-filtres--catalog-content-padding js-catalog-filtres-hidden">
+            <div class="catalog-filtres__filtres">
+              <div class="catalog-filtres__category" data-parent-filter="color">
+                <ul class="catalog-filtres__list">
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Коричневый">
+                      <span class="checkbox-custom"></span>
+                      Коричневый
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Черный">
+                      <span class="checkbox-custom"></span>
+                      Черный
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Бежевый">
+                      <span class="checkbox-custom"></span>
+                      Бежевый
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Серый">
+                      <span class="checkbox-custom"></span>
+                      Серый
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Белый">
+                      <span class="checkbox-custom"></span>
+                      Белый
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Синий">
+                      <span class="checkbox-custom"></span>
+                      Синий
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Оранжевый">
+                      <span class="checkbox-custom"></span>
+                      Оранжевый
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Желтый">
+                      <span class="checkbox-custom"></span>
+                      Желтый
+                    </label>
+                  </li>
+                  <li class="catalog-filtres__item">
+                    <label class="checkbox-label catalog-filtres__chekbox-label"
+                      aria-label="Галочка о принятии пользовательского соглашения">
+                      <input class="checkbox" type="checkbox" data-filter="Зеленый">
+                      <span class="checkbox-custom"></span>
+                      Зеленый
+                    </label>
+                  </li>
+                </ul>
+                <a href="#" class="catalog-filtres__link">
+                  <span class="catalog-filtres__link-text">
+                    + еще 7
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-content__cards">
+  
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--r94">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">5,0</span>
+        </div>
+        <img class="card__img" src="img/divan-r-94.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван кожаный <br> “R-94”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">94 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+  
+  
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--t75">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,9</span>
+        </div>
+        <img class="card__img" src="img/divan-t-75.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван апартековый <br> “T-75”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">69 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--d31">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,8</span>
+        </div>
+        <img class="card__img" src="img/divan-d-31.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван тканевый <br> “D-31”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">28 490 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--y68">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,8</span>
+        </div>
+        <img class="card__img" src="img/divan-y-68.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван велюровый <br> “Y-68”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">22 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--w95">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,8</span>
+        </div>
+        <img class="card__img" src="img/divan-w-95.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван из шинила <br> “W-95”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">22 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--g41">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,8</span>
+        </div>
+        <img class="card__img" src="img/divan-g-41.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван флоковый <br> “G-41”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">17 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--v93">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,8</span>
+        </div>
+        <img class="card__img" src="img/divan-v-93.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван шиниловый <br> “V-43”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">19 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--s99">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,7</span>
+        </div>
+        <img class="card__img" src="img/divan-s-99.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван велюровый <br> “S-99”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">19 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--s99">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,7</span>
+        </div>
+        <img class="card__img" src="img/divan-s-99.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван велюровый <br> “S-99”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">19 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <!--!!!!!!!!!!!-->
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--h64">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,6</span>
+        </div>
+        <img class="card__img" src="img/divan-h-64.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван флоковый <br> “H-64”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">25 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--h58">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,6</span>
+        </div>
+        <img class="card__img" src="img/divan-h-58.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван флоковый <br> “H-58”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">23 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--r43">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,6</span>
+        </div>
+        <img class="card__img" src="img/divan-r-43.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван из кожзама <br> “R-43”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">39 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--c42">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,6</span>
+        </div>
+        <img class="card__img" src="img/divan-c-42.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван из шинила <br> “C-42”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">18 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--u58">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,6</span>
+        </div>
+        <img class="card__img" src="img/divan-u-58.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван велюровый <br> “U-58”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">21 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--f41">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,7</span>
+        </div>
+        <img class="card__img" src="img/divan-f-41.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван флоковый <br> “F-41”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">17 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--r85">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,5</span>
+        </div>
+        <img class="card__img" src="img/divan-r-85.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван велюровый <br> “R-85”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">34 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--s44">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,7</span>
+        </div>
+        <img class="card__img" src="img/divan-s-44.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван велюровый <br> “S-44”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">19 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+      <div class="card card--rating js-card">
+        <div class="card__stars card__stars--c80">
+          <svg>
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <span class="card__number">4,4</span>
+        </div>
+        <img class="card__img" src="img/divan-c-80.png" alt="Диван кожаный “R-94”">
+        <h3 class="card__title card__title--rating">Диван из шинила <br> “C-80”</h3>
+        <div class="card__price card__price--rating">
+          <span class="card__price-actual card__price-actual--rating">20 990 руб</span>
+        </div>
+        <button class="button-card card__btn card__btn--rating" aria-label="Кнопка купить">Купить</button>
+        <a href="cardDetail.html" class="card__link-overlay"></a>
+      </div>
+    </div>
+    <div class="paginations">
+      <ul class="paginations__list">
+        <li class="paginations__item"><button class="paginations__btn js-pagination-btn active" aria-label="Страница 1"
+            data-numpage='1'>1</button></li>
+        <li class="paginations__item"><button class="paginations__btn js-pagination-btn" aria-label="Страница 2"
+            data-numpage='2'>2</button></li>
+      </ul>
+    </div>
+  </div>
